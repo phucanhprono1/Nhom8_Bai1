@@ -29,11 +29,12 @@ public class CardController {
 
 
     @PostMapping("/calculate-fee")
-    public Payment calculateTourFee(@RequestBody ProcessPayment process) {
+    public double calculateTourFee(@RequestBody ProcessPayment process) {
         Payment payment = new Payment();
         payment.setFee(paymentService.CalculateFee(process));
         payment.setNumber_of_people(process.getNumber_of_people());
         payment.setCreditCard(process.getCreditCard());
-        return paymentRepository.save(payment);
+        paymentRepository.save(payment);
+        return payment.getFee();
     }
 }

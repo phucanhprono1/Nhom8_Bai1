@@ -75,7 +75,7 @@
       android:layout_marginLeft="60dp"
       android:layout_marginTop="20dp"
       android:ems="10"
-      android:hint="exp month"
+      android:hint="people num"
       android:minHeight="48dp" />
 
   <Button

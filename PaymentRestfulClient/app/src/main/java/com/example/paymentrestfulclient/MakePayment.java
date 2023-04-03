@@ -64,7 +64,7 @@ public class MakePayment extends AppCompatActivity {
                 try {
                     RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
                     JSONObject jsonbody = new JSONObject();
-                    jsonbody.put("creditCard",creditCard);
+                    jsonbody.put("CreditCard",creditCard);
                     jsonbody.put("number_of_people",num_of_people);
 
                     final String requestBody = jsonbody.toString();
@@ -72,6 +72,7 @@ public class MakePayment extends AppCompatActivity {
                         @Override
                         public void onResponse(String response) {
                             Log.i("VOLLEY", response);
+                            fee.setText("Fee: "+response+"$");
                         }
                     }, new Response.ErrorListener() {
                         @Override
