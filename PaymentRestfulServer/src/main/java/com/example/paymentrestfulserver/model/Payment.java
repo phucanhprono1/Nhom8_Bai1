@@ -15,10 +15,10 @@ public class Payment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column(name = "number_of_people")
-    private long number_of_people ;
+    private int number_of_people ;
     @Column(name = "fee")
     private double fee;
-    @OneToOne
+    @OneToOne(cascade=CascadeType.ALL)
     private CreditCard creditCard;
 
     public Payment() {

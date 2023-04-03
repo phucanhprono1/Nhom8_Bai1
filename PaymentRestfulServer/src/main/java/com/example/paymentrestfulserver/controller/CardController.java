@@ -32,6 +32,8 @@ public class CardController {
     public Payment calculateTourFee(@RequestBody ProcessPayment process) {
         Payment payment = new Payment();
         payment.setFee(paymentService.CalculateFee(process));
+        payment.setNumber_of_people(process.getNumber_of_people());
+        payment.setCreditCard(process.getCreditCard());
         return paymentRepository.save(payment);
     }
 }
