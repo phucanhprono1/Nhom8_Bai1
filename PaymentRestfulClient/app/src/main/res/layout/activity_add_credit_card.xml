@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddCreditCard">
+
+    <EditText
+        android:id="@+id/card_holder_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/card_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="card type"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/card_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="card number"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/card_cvc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:hint="CVC"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/expiration_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="exp year"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/expiration_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="exp month"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/button_add_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
