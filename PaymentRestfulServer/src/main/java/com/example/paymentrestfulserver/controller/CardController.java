@@ -9,6 +9,7 @@ import com.example.paymentrestfulserver.service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
@@ -26,7 +27,10 @@ public class CardController {
     public CreditCard addCreditCard(@RequestBody CreditCard creditCard) {
         return creditCardRepository.save(creditCard);
     }
-
+    @GetMapping("/getAllCreditCard")
+    public List<CreditCard> getAllCreditCard() {
+       return creditCardRepository.findAll();
+    }
 
     @PostMapping("/calculate-fee")
     public double calculateTourFee(@RequestBody ProcessPayment process) {

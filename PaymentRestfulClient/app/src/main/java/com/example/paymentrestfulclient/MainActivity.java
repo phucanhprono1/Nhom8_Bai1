@@ -29,5 +29,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        Button getCredit = findViewById(R.id.getListCard);
+        getCredit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this,GetCreditCardList.class);
+                startActivity(i);
+            }
+        });
     }
 }

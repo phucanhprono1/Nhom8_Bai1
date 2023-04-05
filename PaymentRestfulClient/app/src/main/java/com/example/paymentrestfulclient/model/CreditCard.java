@@ -1,6 +1,7 @@
 package com.example.paymentrestfulclient.model;
 
 public class CreditCard {
+
     private String cardHolderName;
 
     private String cardType;
@@ -8,6 +9,30 @@ public class CreditCard {
     private String cardNumber;
 
     private int cardCvc;
+
+    public String getCardHolderName() {
+        return cardHolderName;
+    }
+
+    public String getCardType() {
+        return cardType;
+    }
+
+    public String getCardNumber() {
+        return cardNumber;
+    }
+
+    public int getCardCvc() {
+        return cardCvc;
+    }
+
+    public String getExpirationYear() {
+        return expirationYear;
+    }
+
+    public String getExpirationMonth() {
+        return expirationMonth;
+    }
 
     private String expirationYear;
 
